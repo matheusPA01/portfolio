@@ -70,8 +70,8 @@ export const HeaderNavLink = styled.a`
     color: ${(props) => props.theme["gray-400"]};
   }
 
-  &:hover::before, &:hover::after {
-    color: ${(props) => props.theme["green-500"]};
+  &:visited {
+    color: ${(props) => props.theme["gray-300"]};
   }
 
   @media screen and (min-width: 375px) {

@@ -60,10 +60,6 @@ export const ProjectsCard = styled.div`
     width: 100%;
   }
 
-  p {
-    /* height: 2.5rem; */
-  }
-
   @media screen and (min-width: 320px) {
     padding: 1.5rem 1rem;
 
@@ -85,14 +81,12 @@ export const ProjectsCard = styled.div`
 
     p {
       font-size: 1rem;
-      /* height: 2.5rem; */
     }
   }
 
   @media screen and (min-width: 1024px) {
     h3 {
       height: 2.5rem;
-      /* font-size: 1.15rem; */
     }
 
     p {

@@ -127,7 +127,7 @@ export const AboutMeConsoleBar = styled.div`
 
 export const AboutMeConsoleContent = styled.div`
   margin-top: 2rem;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
 
   p {
     display: flex;
@@ -147,6 +147,30 @@ export const AboutMeConsoleContent = styled.div`
 
     svg {
       color: ${(props) => props.theme["blue-300"]};
+    }
+  }
+
+  @media screen and (min-width: 320px) {
+    p {
+      font-size: 0.875rem;
+
+      svg {
+        font-size: 1.25rem;
+      }
+
+      &+p {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) {
+    p {
+      font-size: 1.25rem;
+
+      &+p {
+        margin-top: 0;
+      }
     }
   }
 `
