@@ -5,11 +5,11 @@ interface MyProjectsProps {
   url: string;
 }
 
-import imgNlw from './nlw.png'
-import imgPortfolio from './Portfolio.png'
-import imgGitblog from './gitblog.png'
-import imgCoffee from './coffee.png'
-import imgTodo from './todo.png'
+import imgNlw from '../assets/nlw.png'
+import imgPortfolio from '../assets/portfolio.png'
+import imgGitblog from '../assets/gitblog.png'
+import imgCoffee from '../assets/coffee.png'
+import imgTodo from '../assets/todo.png'
 
 export const myProjects: MyProjectsProps[] = [
   {

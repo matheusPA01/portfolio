@@ -66,24 +66,8 @@ export const HeaderNavLink = styled.a`
   font: 400 0.75rem 'JetBrains Mono', sans-serif;
   transition: color 0.3s;
 
-  &:hover {
-    color: ${(props) => props.theme["gray-400"]};
-  }
-
   &:visited {
     color: ${(props) => props.theme["gray-300"]};
-  }
-
-  @media screen and (min-width: 375px) {
-    font-size: 0.875rem;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 1rem;
-  }
-
-  @media screen and (min-width: 1024px) {
-    font-size: 1.25rem;
   }
 
   @media screen and (min-width: 320px) {
@@ -92,15 +76,27 @@ export const HeaderNavLink = styled.a`
     }
   }
 
+  @media screen and (min-width: 375px) {
+    font-size: 0.875rem;
+  }
+
   @media screen and (min-width: 768px) {
+    font-size: 1rem;
+
     &+a {
       margin-left: 1rem;
     }
   }
 
   @media screen and (min-width: 1024px) {
+    font-size: 1.25rem;
+
     &+a {
       margin-left: 2rem;
+    }
+
+    &:hover {
+    color: ${(props) => props.theme["gray-400"]};
     }
   }
 `
